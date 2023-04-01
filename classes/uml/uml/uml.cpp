@@ -57,9 +57,28 @@ void testingsetFloor(Library object) {
 		cerr << "" << floor_current << " fail" << endl;
 	}
 
-	floor_current = 3;
+
+floor_current = 5;
 	if (object.setFloor(floor_current) == 0) {
-		cerr << "" << floor_current << "done" << endl;
+		cerr << "" << floor_current << " done" << endl;
+	}
+	else {
+		cerr << "" << floor_current << " fail" << endl;
+	}
+
+
+	floor_current = 0;
+	if (object.setFloor(floor_current) == 0) {
+		cerr << "" << floor_current << " done" << endl;
+	}
+	else {
+		cerr << "" << floor_current << " fail" << endl;
+	}
+
+
+	floor_current = 6;
+	if (object.setFloor(floor_current) == 0) {
+		cerr << "" << floor_current << " done" << endl;
 	}
 	else {
 		cerr << "" << floor_current << " fail" << endl;
@@ -72,6 +91,9 @@ void testingsetFloor(Library object) {
 	else {
 		cerr << "" << floor_current << " fail" << endl;
 	}
+
+	
+
 }
 
 void testingsetdate(Library object) {
